@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotosCollectionViewCell" customModule="Photos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="335"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="335"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Xa-JA-xbx">
+                        <rect key="frame" x="15" y="15" width="300" height="300"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="182" id="E07-ZZ-X94"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="182" id="eFN-Za-jwc"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="paw" translatesAutoresizingMaskIntoConstraints="NO" id="YYR-p4-5an">
+                        <rect key="frame" x="90" y="86" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Fcv-Hy-wSk"/>
+                            <constraint firstAttribute="height" constant="150" id="JpB-u9-fr7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YYR-p4-5an" firstAttribute="centerX" secondItem="3Xa-JA-xbx" secondAttribute="centerX" id="Ew0-yJ-dZM"/>
+                <constraint firstItem="3Xa-JA-xbx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HrA-TB-xjN"/>
+                <constraint firstItem="YYR-p4-5an" firstAttribute="centerY" secondItem="3Xa-JA-xbx" secondAttribute="centerY" id="Rd5-Oy-cPi"/>
+                <constraint firstItem="3Xa-JA-xbx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ajD-ot-m6h"/>
+                <constraint firstItem="3Xa-JA-xbx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="bJS-rK-D0r"/>
+                <constraint firstAttribute="trailing" secondItem="3Xa-JA-xbx" secondAttribute="trailing" constant="5" id="pP7-Z1-Hbb"/>
+            </constraints>
+            <size key="customSize" width="404" height="341"/>
+            <connections>
+                <outlet property="catPawIcon" destination="YYR-p4-5an" id="jb5-4N-tLM"/>
+                <outlet property="image" destination="3Xa-JA-xbx" id="aVl-DD-2gR"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="237.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="paw" width="100" height="100"/>
+    </resources>
+</document>
